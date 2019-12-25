@@ -1,0 +1,43 @@
+body {
+background-image: url(tlo.jpg);
+}
+
+article h1 {
+float: middle;
+text-align: center;
+font-size: 40px;
+}
+
+article {
+background-color: #66CCFF;
+}
+
+ul {
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+
+li a {
+display: block;
+float: middle;
+text-align: center;
+font-size: 25px;
+width: 100%;
+color: black;
+background-color: #66CCFF;
+padding: 10px 15px;
+margin: 0px 1px 1px 0px;
+border: 1px solid navy;
+}
+
+li a:hover {
+color: black;
+background: #3399CC;
+}
+
+footer h5 {
+background-color: #66CCFF;
+text-align: right;
+}
