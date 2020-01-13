@@ -1,5 +1,5 @@
 body {
-background-image: url(tlo.jpg);
+background-color: #00CC99;
 }
 
 article h1 {
@@ -9,35 +9,25 @@ font-size: 40px;
 }
 
 article {
-background-color: #66CCFF;
+background-color: #33FFFF;
 }
 
-ul {
-width: 100%;
-padding: 0;
-margin: 0;
-}
-
-
-li a {
-display: block;
-float: middle;
+a.menu {
+background-color: #33FFFF;
+display: inline-block;
+width: 31.05%;
+padding: 10px 20px;
+color: black;
+font-size: 30px;
 text-align: center;
-font-size: 25px;
-width: 100%;
-color: black;
-background-color: #66CCFF;
-padding: 10px 15px;
-margin: 0px 1px 1px 0px;
-border: 1px solid navy;
 }
-
-li a:hover {
-color: black;
-background: #3399CC;
+  
+ 
+a.menu:hover {
+background-color: #6666FF;
 }
 
 footer h5 {
-background-color: #66CCFF;
+background-color: #33FFFF;
 text-align: right;
 }
