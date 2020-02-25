@@ -2,7 +2,7 @@ body {
 background-color: #00CC99;
 }
 
-article h1 {
+article a {
 float: middle;
 text-align: center;
 font-size: 40px;
