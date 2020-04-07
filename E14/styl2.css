@@ -1,51 +1,36 @@
 body {
-font-family: Georgia;
+	font-family: Garamond;
 }
-header {
-	background: #824555;
+#g {
+	background-color: #3CB371;
 	color: white;
+	padding: 10px;
+	font-size: 130%;
 	text-align: center;
-	padding: 20px;
 }
-.pg12 {
-	background: #A26475;
-	color: white;
-	width: 30%;
-	height: 300px;
+#l {
+	background-color: #FAEBD7;
+	height: 450px;
+	width: 55%;
 	float: left;
 }
-.pg3 {
-	background: #A26475;
-	color: white;
-	width: 40%;
-	height: 300px;
-	text-align: right;
+#p {
+	background-color: #FAEBD7;
+	height: 450px;
+	width: 45%;
 	float: left;
-}
-main {
-	background: #F0EAE2;
-	padding: 50px;
-	clear: both;
 }
 footer {
-	background: #824555;
-	text-align: center;
-	padding: 20px;
+	background-color: #3CB371;
+	color: white;
+	padding: 10px;
+	font-size: 130%;
+    text-align: center;
 }
-table, tr, th, td {
-	border: 2px solid #69293A;
-	padding: 7px;
-	border-collapse: collapse;
-}
-ul {
-	list-style: square;
-}
-#red{
-	background: red;
-}
-#green {
-	background: green;
-}
-#blue {
-	background: blue;
+img {
+	padding: 3px;
+	margin: 15px;
+	border: 2px;
+	border: #3CB371;
+	border-style: dashed;
 }
