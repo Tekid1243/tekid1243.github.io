@@ -1,36 +1,51 @@
 body {
-	font-family: Garamond;
+font-family: Georgia;
 }
-#g {
-	background-color: #3CB371;
+header {
+	background: #824555;
 	color: white;
-	padding: 10px;
-	font-size: 130%;
 	text-align: center;
+	padding: 20px;
 }
-#l {
-	background-color: #FAEBD7;
-	height: 450px;
-	width: 55%;
+.pg12 {
+	background: #A26475;
+	color: white;
+	width: 30%;
+	height: 300px;
 	float: left;
 }
-#p {
-	background-color: #FAEBD7;
-	height: 450px;
-	width: 45%;
+.pg3 {
+	background: #A26475;
+	color: white;
+	width: 40%;
+	height: 300px;
+	text-align: right;
 	float: left;
+}
+main {
+	background: #F0EAE2;
+	padding: 50px;
+	clear: both;
 }
 footer {
-	background-color: #3CB371;
-	color: white;
-	padding: 10px;
-	font-size: 130%;
-    text-align: center;
+	background: #824555;
+	text-align: center;
+	padding: 20px;
 }
-img {
-	padding: 3px;
-	margin: 15px;
-	border: 2px;
-	border: #3CB371;
-	border-style: dashed;
+table, tr, th, td {
+	border: 2px solid #69293A;
+	padding: 7px;
+	border-collapse: collapse;
+}
+ul {
+	list-style: square;
+}
+#red{
+	background: red;
+}
+#green {
+	background: green;
+}
+#blue {
+	background: blue;
 }
