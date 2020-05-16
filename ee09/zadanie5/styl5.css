@@ -1,0 +1,63 @@
+body {
+	font-family: Georgia;
+}
+#gora1 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width:40%;
+	float: left;
+}
+#gora2 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width: 50%;
+	font-size: 150%;
+	float: left;
+}
+#gora3 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width: 10%;
+	float: left;
+}
+#glowny {
+	background: Tan;
+	padding: 100px;
+}
+a {
+	border: dashed;
+	border-width: 1px;
+	border-color: Sienna;
+	background: Tan;
+	color: Sienna;
+	padding: 40px;
+	line-height: 150px;
+}
+#stopka1 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width:40%;
+	float: left;
+}
+#stopka2 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width: 50%;
+	font-size: 150%;
+	float: left;
+}
+#stopka3 {
+	background: Sienna;
+	color: white;
+	height: 150px;
+	width: 10%;
+	float: left;
+}
+li {
+	list-style-type: circle;
+}
