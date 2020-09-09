@@ -1,0 +1,44 @@
+body {
+	margin: auto;
+	color: red;
+background: gray;
+font: 20px Arial;
+width: 1000px;
+}
+#menu {
+	height: 130px;
+	background-color: black;
+	}
+#jeden {
+	height:30px;
+	background-color: grey;
+}
+#dwa {
+	height: 430px;
+	width: 20%;
+	float: left;
+	background-color: grey;
+	padding: 25px;
+}
+#trzy {
+background: linear-gradient(90deg,black, white,black);
+height: 430px;
+padding: 25px;
+text-align: center;
+}
+li {
+	color: red;
+	text-decoration: underline;
+}
+#cztery {
+	background-color: grey;
+	text-align: right;
+}
+a {
+color: red;
+text-align: center;
+}
+@keyframes aside1 {
+from {left:-500px;}
+to {left:0px;}
+}
