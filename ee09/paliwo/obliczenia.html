@@ -19,22 +19,14 @@
 <p>Ile litrów</p> <input type="number" id="b"></br>
 <button type="button" onclick="oblicz"> OBLICZ </button>
 <script>
-function oblicz()
-{
-var a=document.getElementById("a").value
-var b=document.getElementById("b").value;
-}
-if (a=="1")
-{
-var typ=4;
-var suma = typ*b;
-document.getElementById("wynik").innerHTML="Koszt paliwa" + suma + "zł";
-}
-if (a=="2")
-{
-var typ=3.5;
-var suma = typ*b;
-document.getElementById("wynik").innerHTML="Koszt paliwa" + suma + "zł";
+function oblicz(){
+var a = document.getElementById("a").value;
+if(a==1){a=4}
+else if(a==2){a=3.5}
+else {a=0}
+var b = document.getElementById("b").value;
+var wynik = a * b;
+document.getElementById("wynik").innerHTML = "Koszt paliwa: "+wynik+" zł";
 }
 </script>
 </section>
