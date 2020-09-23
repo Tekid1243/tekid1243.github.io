@@ -14,15 +14,15 @@ width: 1000px;
 	background-color: grey;
 }
 #dwa {
-	height: 430px;
+	height: 500px;
 	width: 20%;
 	float: left;
 	background-color: grey;
 	padding: 25px;
 }
 #trzy {
-background: linear-gradient(90deg,black, white,black);
-height: 430px;
+background: linear-gradient(90deg, black, white, black);
+height: 500px;
 padding: 25px;
 text-align: center;
 }
