@@ -28,10 +28,21 @@
 </section>
 <section id="d">
 <h3>Oblicz koszt dostawy</h3>
-<input type="checkbox">Jestem z Zielonej Góry
+<input type="checkbox" id="zg"> Jestem z Zielonej Góry
 <p>albo</p>
-Podaj liczbę kilometrów od Zielonej Góry: <input type="number"</br>
-<input type="button" value="Oblicz">
+ Podaj liczbę kilometrów od Zielonej Góry: <input type="number" id="lk"><br>
+<input type="button" value="Oblicz" onclick="oblicz()">
+<p id="wynik"></p>
+ <script>
+function oblicz(){
+ var k = document.getElementById("lk").value*2
+ if(document.getElementById("zg").checked==true) {
+  document.getElementById("wynik").innerHTML = "Dowieziemy twoją pizze za darmo"
+ }
+ else if(document.getElementById("zg").checked==false) {
+  document.getElementById("wynik").innerHTML = "Dowóz będzie Cię kosztował "+k+" złotych"
+ } 
+} </script>
 </section>
 <footer>
 Stronę internetową opracował:<b>000000000</b>
