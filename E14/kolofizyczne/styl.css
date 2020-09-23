@@ -39,6 +39,10 @@ color: red;
 text-align: center;
 }
 @keyframes aside1 {
-from {left:-500px;}
-to {left:0px;}
+from {left:-500px;
+to {left:0px;
+}
+aside span {
+position: relative;
+animation: aside1 5s alternate infinite;
 }
