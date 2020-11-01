@@ -20,13 +20,46 @@
 </section>
 <section id="lewy">
 <h3>Proste działania</h3>
-<p>liczba A: <input id="pole" type="text"></p>
-<p>liczba B: <input id="pole" type="text"></p>
-<input id="przycisk" type="button" value="+">
-<input id="przycisk" type="button" value="-">
-<input id="przycisk" type="button" value="*">
-<input id="przycisk" type="button" value="/">
-<input id="przycisk" type="button" value="A^B">
+<p>liczba A: <input id="a" type="number"></p>
+<p>liczba B: <input id="b" type="number"></p>
+<input type="button" value="+" onclick="dodawanie()">
+<input type="button" value="-" onclick="odejmowanie()">
+<input type="button" value="*" onclick="mnozenie()">
+<input type="button" value="/" onclick="dzielenie()">
+<input type="button" value="A^B" onclick="potegowanie"()"><br>
+<p id="wynik"></p>
+<script>
+function dodawanie(){
+var a = +document.getElementById("a").value;
+var b = +document.getElementById("b").value;
+var wynik = a + b;
+document.getElementById("wynik").innerHTML = "Wynik:" + wynik;
+}
+function odejmowanie(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var wynik = a - b;
+document.getElementById("wynik").innerHTML = "Wynik: "+wynik;
+}
+function mnozenie(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var wynik = a * b;
+document.getElementById("wynik").innerHTML = "Wynik: "+wynik;
+}
+function dzielenie(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var wynik = a / b;
+document.getElementById("wynik").innerHTML = "Wynik: "+wynik;
+}
+function potegowanie(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var wynik = Math.pow(a, b);
+document.getElementById("wynik").innerHTML = "Wynik: "+wynik;
+}
+</script>
 </section>
 <section id="prawy">
 <ul>
