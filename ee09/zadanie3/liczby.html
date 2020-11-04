@@ -27,10 +27,22 @@
 </section>
 <section id="prawy">
 <h2>Generowanie ciągu arytmetycznego</h2>
-<p>Pierwszy wyraz A1: <input type="number"></p>
-<p>Różnica ciągu R: <input type="number"></p>
-<p>Liczba wyrazów w ciągu N: <input type="number"></p>
-<input type="button" value="Generuj ciąg">
+<p>Pierwszy wyraz A1: <input id="pierwszy" type="number">
+<p>Różnica ciągu R: <input id="roznica" type="number"></p>
+<p>Liczba wyrazów w ciągu N: <input id="ilosc" type="number"></p>
+<input type="button" value="Generuj ciąg" onclick="generuj()">
+<script>
+function  generuj(){
+var a = +document.getElementById("pierwszy").value;
+ var b = +document.getElementById("roznica").value;
+  var c = +document.getElementById("ilosc").value;
+  var wynik;
+ for(var i=0; i<ilosc;i++){
+   wynik += a;
+   a += b;
+ }
+  document.getElementById("wynik").innerHTML = "Ciąg wyrazów" + wynik;
+ </script>
 </section>
 <section id="stopka">
 <p>Autor:00000000000</p>
