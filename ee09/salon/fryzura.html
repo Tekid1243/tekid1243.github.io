@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<meta charset="utf-8">
+<title>Usługi fryzjerskie</title>
+<link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+<section id="lewy1">
+<h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+<img src="obraz2.jpg" alt="Czesanie">
+</section>
+<section id="lewy2">
+<h3>Dziś promocja na strzyżenie włosów</h3>
+<input type="radio" name="strzyzenie" value="a" id="krotkie"> Krótkie <br>
+<input type="radio" name="strzyzenie" value="b" id="srednie"> Średnie <br>
+<input type="radio" name="strzyzenie" value="c" id="poldlugie"> Półdługie <br>
+<input type="radio" name="strzyzenie" value="d" id="dlugie"> Długie <br>
+<input type="button" value="Odkryj promocję" onclick="oblicz()">
+<p id="wynik"></p>
+<script>
+function oblicz() {
+var a = documentElementById("krotkie");
+var b = documentElementById("srednie");
+var c = documentElementById("poldlugie");
+var d = documentElementById("dlugie");
+var e = 0;
+if(a.checked == true) {
+e = 25;
+}
+if(b.checked == true) {
+e = 30;
+}
+if(c.checked == true) {
+e = 40;
+}
+if(d.checked == true) {
+e = 50;
+}
+document.getElementById("wynik").innerHTML = "Cena strzyżenia "+e;
+}
+</script>
+</section>
+<section id="prawy1">
+<h2>MENU</h2>
+</section>
+<section id="prawy2">
+<ol>
+<li><a href="fryzura.html">Strzyżenie</a></li>
+<ul>
+<li>krótkie</li>
+<li>średnie</li>
+<li>półdługie</li>
+<li>długie</li>
+</ul>
+<li>Czesanie</li>
+<li>Koloryzacja</li>
+</ol>
+</section>
+<section id="prawy3">
+<img src="obraz1.jpg" alt="Fryzjer">
+</section>
+<section id="stopka">
+<p>Autor: 00000000000</p>
+</section>
+</body>
+</html>
