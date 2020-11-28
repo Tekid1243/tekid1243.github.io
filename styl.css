@@ -16,7 +16,6 @@ a.menu:hover {
 background-color: blue;
 }
 h3 {
-border-bottom: 3px solid #000066;
 font-size: 25px;
 color: black;
 text-align: center;
@@ -37,5 +36,6 @@ font-size: 40px;
 img.displayed {
 display: block;
 margin-left: auto;
-margin-right: auto }
+margin-right: auto;
+ border-bottom: 3px solid #000066;
 }
