@@ -34,3 +34,7 @@ h1 {
 	color: white;
 	font-size: 40px;
 }
+img.wysrodkuj {
+    margin:0 auto;
+    display:block;
+}
