@@ -1,6 +1,3 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
 <title>Fabryka żelków</title>
 <meta charset="utf-8"/>
 <link rel="stylesheet" href="styl9.css"/>
@@ -28,13 +25,30 @@
 </section>
 <section id="dol2">
 <p>Podaj numer kształtu</p>
-<input type="number"></input>
+<input id="ksztalt" type="number"></input>
 <p>skomponuj swój kolor, podaj RGB</p>
-<p>R<input type="number"></input>
-G<input type="number"></input>
-B<input type="number"></input></p>
-<button onclick="zamow()">Zamów</button><br>
-<p id="wypisz">Wybrany kształt</p>
+<p>R<input id="1" type="number"></input>
+G<input id="2" type="number"></input>
+B<input id="3" type="number"></input></p>
+<input type="button" value="Zamów" onclick="zamow()">
+<p id="wypisz"></p>
+<script>
+function zamow(){
+var ksztalt = document.getElementById("ksztalt").value;
+if (ksztalt == 1){
+document.getElementById("wypisz").innerHTML = "Zamówiłeś żelka: miś";
+}
+else if (ksztalt == 2){
+document.getElementById("wypisz").innerHTML = "Zamówiłeś żelka: żabka";
+}
+else if (ksztalt == 3) {
+document.getElementById("wypisz").innerHTML = "Zamówiłeś żelka: serce";
+}
+
+else if (ksztalt != 1 && 2 && 3 )
+document.getElementById("wypisz").innerHTML = "Zamówiłeś inny kształt";
+}
+</script>
 </section>
 <section id="stopka">
 <p>Autor strony: 0000000000</p>
