@@ -1,11 +1,12 @@
 body {
 margin-left: 10%;
 margin-right: 10%;
-background-color: #666666;
+background-color: white;
 font-family: Marker Felt;
+background: url("tlo.jpg") no-repeat center fixed;
 }
 a.menu {
-background-color: #675FFF;
+background-color: rgba(69,189,255,0.5);
 float: left;
 width: 50%;
 color: black;
@@ -13,13 +14,13 @@ font-size: 35px;
 text-align: center;
 }
 a.menu:hover {
-background-color: blue;
+background-color: rgba(69,189,255,0.8) ;
 }
 h3 {
 font-size: 25px;
 color: black;
 text-align: center;
-border-bottom: 3px solid #000066;
+background-color: rgba(255,255,255,0.6);
 }
 #stopka {
 text-align: right;
@@ -28,11 +29,13 @@ font-size: 16px;
 }
 li {
 font-size: 20px;
+background-color: rgba(255,255,255,0.6);
 }
 h1 {
 text-align: center;
-color: white;
+color: black;
 font-size: 40px;
+background-color: rgba(255,255,255,0.6);
 }
 h6 {
 text-align: center;
@@ -43,3 +46,8 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+h2 {
+background-color: rgba(255,255,255,0.6);
+}
+p {
+background-color: rgba(255,255,255,0.6);
