@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang='pl'>
+<head>
+<title>Hurtownia</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+<div class="logo">
+<img src="logo.png" alt="hurtownia"/>
+</div>
+<div class="menu">
+<a href="index.html">Strona główna</a>
+<a href="zamowienia.html">Zamówienia</a>
+<a href="blog.html">Blog o kawie</a>
+<a href="http://gatunki-kawy.pl" target="_blank"> Odwiedź także</a>
+</div>
+<div class="baner">
+<h1>Hurtownia kawy</h1>
+</div>
+<div class="lewy">
+<h2>Oferta</h2>
+<ol>
+<li>Kawa palona Arabica</li>
+<li>Kawa palona Robusta</li>
+<li>Kawa bezkofeinowa</li>
+<li>Kawa zielona</li>
+</ol>
+</div>
+<div class="prawy">
+<p>Podaj numer kawy: </p>
+<input type="number" id="numer"/>
+<p>Podaj wagę w dekagramach</p>
+<input type="number" id="waga"/>
+<br>
+<button onclick="oblicz()" >Zamów</button>
+<p id="wynik"></p>
+<script>
+function oblicz() {
+var numer = document.getElementById("numer").value;
+var waga = document.getElementById("waga").value;
+var koszt;
+if (numer == 1) {
+koszt = waga*5;
+}
+else if (numer == 2) {
+koszt = waga*7;
+}
+else if (numer == 3) {
+koszt = waga*6;
+}
+else if () {
+koszt = 0;
+}
+document.getElementById("wynik").innerHTML = "Koszt zamówienia wynosi: "+wynik+" zł";
+}
+</script>
+</div>
+<div class="stopka">
+<p> Stronę przygotował: 0000000000 </p>
+</div>
+</body>
+</html>

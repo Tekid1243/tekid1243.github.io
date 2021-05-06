@@ -1,0 +1,67 @@
+﻿body {
+	font-family: Arial;
+	margin: 0;
+}
+.logo {
+	background-color: rgb(162,117,87);
+	height: 100px;
+	width: 20%;
+	float: left;
+}
+.menu {
+	background-color: rgb(162,117,87);
+	height: 100px;
+	width: 80%;
+	float: left;
+	text-align: right;
+}
+.baner {
+	background-color: rgb(74,45,32);
+	color: white;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+}
+.stopka {
+	background-color: rgb(74,45,32);
+	color: white;
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+}
+.lewy {
+	background-color: rgb(162,117,87);
+	color: white;
+	height: 500px;
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.prawy{
+	background-color: rgb(162,117,87);
+	color: white;
+	height: 500px;
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	letter-spacing: 10px;
+}
+a {
+	color: rgb(65,98,85);
+	margin: 10px;
+	padding: 20px;
+	font-size: 150%;
+	border: 1px solid rgb(65,98,85);
+	line-height: 100px;
+}
+.lewy li:nth-child(4) {
+	text-decoration: line-through;
+}
