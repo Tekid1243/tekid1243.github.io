@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twoje BMI</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+<div class="logo">
+	<img src="wzor.png" alt="wzór BMI">
+</div>
+<div class="baner">
+	<h1>Oblicz swoje BMI</h1>
+</div>
+<div class="glowny">
+	<table>
+		<tr>
+			<th>Interpretacja BMI</th><th>Wartość minimalna</th><th>Wartość maksymalna</th>
+		</tr>
+		<tr>
+			<td>niedowaga</td><td>0</td><td>18</td>
+		</tr>
+		<tr>
+			<td>waga prawidłowa</td><td>19</td><td>25</td>
+		</tr>
+		<tr>
+			<td>nadwaga</td><td>26</td><td>30</td>
+		</tr>
+		<tr>
+			<td>otyłość</td><td>31</td><td>100</td>
+		</tr>
+	</table>
+</div>
+<div class="lewy">
+	<h2>Podaj wagę i wzrost</h2>
+	<div class="form">
+	<p>Waga:
+	<input type="number" id="waga"/> </p>
+	<p>Wzrost w cm:
+	<input type="number" id="wzrost"/> </p>
+	<button onclick="oblicz()">Oblicz</button>
+	<p id="wynik"></p>
+	</div>
+	<script>
+	function oblicz() {
+	var waga = +document.getElementById("waga");
+	var wzrost = +document.getElementById("wzrost");
+	var wynik = waga / (wzrost * wzrost) * 10000;
+	document.getElementById("wynik").innerHTML = "Twoje BMI wynosi: "+wynik;
+	}
+	</script>
+</div>
+<div class="prawy">
+	<img src="rys1.png" alt="ćwieczenia">
+</div>
+<div class="stopka">
+	<p>Autor: 0000000000
+	<a href="kwerendy.txt">Zobacz kwerendy</a> </p>
+</div>
+</body>
+</html>
