@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Twoje BMI</title>
 	<meta charset="utf-8">
@@ -39,13 +37,15 @@
 	<p>Wzrost w cm:
 	<input type="number" id="wzrost"/> </p>
 	<button onclick="oblicz()">Oblicz</button>
+	<p id="dane"></p>
 	<p id="wynik"></p>
 	</div>
 	<script>
 	function oblicz() {
-	var waga = +document.getElementById("waga");
-	var wzrost = +document.getElementById("wzrost");
+	var waga = document.getElementById("waga").value;
+	var wzrost = document.getElementById("wzrost").value;
 	var wynik = waga / (wzrost * wzrost) * 10000;
+	document.getElementById("dane").innerHTML = "Twój wzrost "+wzrost+" Twoja waga " +waga;
 	document.getElementById("wynik").innerHTML = "Twoje BMI wynosi: "+wynik;
 	}
 	</script>
