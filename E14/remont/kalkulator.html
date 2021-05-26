@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<title>Wyremontuj mieszkanie</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="remont.css">
+	</head>
+	<body>
+		<div class="baner">
+			<img src="logo.png"/>
+		</div>
+		<div class="menu">
+			<a href="index.html">O NAS</a>
+		</div>
+		<div class="menu">
+			<a href="kontakt.html">KONTAKT</a>
+		</div>
+		<div class="menu">
+			<a href="kalkulator.html">KALKULATOR</a>
+		</div>
+		<div class="menu">
+		    <a href="http://www.jakremontowac.pl" target=_blank>POLECANE STRONY</a>
+		</div>
+		<div class="glowny">
+			<h1>Malowanie pokoju 8zł za m2</h1>
+			<p>Wymiary pokoju w metrach	<input type="number" id="dlugosc"><input type="number" id="szerokosc"></p>
+			<button onclick="oblicz()">OBLICZ KOSZT</button>
+			<p id="wynik"</p>
+			<p id="cena"</p>
+			<script>
+			function oblicz(){
+			var dlugosc = document.getElementById("dlugosc").value;
+			var szerokosc = document.getElementById("szerokosc").value;
+			var wynik = 2 *(szerokosc*2.7)+ 2*(dlugosc*2.7);
+			var cena = wynik * 8;
+			document.getElementById("wynik").innerHTML = "Powierzchnia całkowita ścian: " + wynik;
+			document.getElementById("cena").innerHTML = "Koszt malowania: " + cena + " zł";
+			}
+			</script>
+		</div>
+		<div class="stopka">
+		<p>Autor strony: 0000000000</p>
+		</div>
+	</body>
+</html>
