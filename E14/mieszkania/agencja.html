@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Kup mieszkanie</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="agencja.css"/>
+</head>
+<body>
+	<div class="lewy">
+		<h1>AGENCJA NIERUCHOMOŚCI</h1>
+		<h3>OFERUJEMY</h3>
+	<ol>
+		<li>Nowe mieszkania</li>
+		<li>Domy w naszym mieście</li>
+		<li>Domy w okolicy</li>
+	</ol>
+	<h3>NASI PRACOWNICY</h3>	
+		<table>
+			<tr>
+			<td rowspan="3"> Jan Nowak<br>Prezes</td>
+			<td>Anna Kowalska</td>
+			</tr>
+			<tr>
+			<td>Katarzyna Nowakowska</td>
+			</tr>
+			<tr>
+			<td>Krzysztof Kowalski</td>
+			</tr>
+		</table>
+	</div>
+	<div class="prawy">
+		<h1>KALKULATOR CENY MIESZKANIA</h1>
+		<p> Podaj metraż mieszkania w m<sup>2</sup>: 
+			</br>
+		<input type="number" id="metry"/>
+			</br>
+			</br>
+		Liczba pokoi z zamontowanym okablowaniem sieciowym: 
+			</br>
+		<input type="number" id="pokoje"/>
+			</br>
+			</br>
+		<input type="checkbox" id="kafelki"/>
+		Kafelki w łazience? </p>
+		<button onclick="oblicz()">OBLICZ</button>
+		<p id="wynik"</p>
+			<script>
+				function oblicz(){
+				var metry = document.getElementById("metry").value;
+				var pokoje = document.getElementById("pokoje").value;
+				var kafelki2 = 0;
+				if (kafelki.checked == true) {
+				kafelki2 = 2000;
+				}
+				var wynik;
+				wynik = (metry * 4000) + (pokoje * 1000) + kafelki2;
+				document.getElementById("wynik").innerHTML = "Koszt mieszkania : " + wynik +" zł";
+				}
+			</script>
+	</div>
+	<div class="stopka">
+		<p>Autor strony: 0000000000</p>
+		<img src="logo.png" alt="nieruchomości"/>
+	</div>
+</body>
+</html>
